@@ -14,6 +14,7 @@ export default defineConfig({
         rollupOptions: {
             input: {
                 main: resolve(root, 'index.html'),
+                authorization: resolve(root, 'authorization.html'),
                 registration: resolve(root, 'registration.html'),
             }
         }
