@@ -1,7 +1,7 @@
-import './style.scss'
+import '../style.scss'
 
 document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
   <div>
-    <p>Hello</p>
+    <p>Главная страница</p>
   </div>
 `
