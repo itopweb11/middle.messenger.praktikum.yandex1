@@ -1,0 +1,13 @@
+<div class="formContainer">
+    {{> Title title="Авторизация" }}
+    <form class="form">
+        <div class="formInputs">
+            {{> Input type="text" name="login" value=login label="Логин" id="login_input" }}
+            {{> Input type="password" name="password" value=password label="Пароль" id="password_input" }}
+        </div>
+        <div class="formAction">
+            {{> Button value="Войти" }}
+            {{> Link url='/registration' text="Нет аккаунта?" }}
+        </div>
+    </form>
+</div>
