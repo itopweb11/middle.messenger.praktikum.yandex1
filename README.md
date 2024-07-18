@@ -1,6 +1,7 @@
-# middle.messenger.praktikum.yandex
+# Чат
+### middle.messenger.praktikum.yandex
 
-### Чтобы запустить проект
+## Чтобы запустить проект
 
 ```npm i```
 
@@ -8,18 +9,17 @@
 
 ### Проект будет доступен по ссылке http://localhost:3000/
 
-### Для сборки проекта
+## Для сборки проекта
 
 ```npm run build```
 
-### Чат
-
+## Ссылки
 - Демо на Netlify: https://yandex-practicum-itopweb11-sprint1.netlify.app
 - Макет на Figma: https://www.figma.com/design/jF5fFFzgGOxQeB4CmKWTiE/Chat_external_link?node-id=0-1&t=Q276IjJfDsN5ywGL-0
 
 
-### Доступные страницы
-- Гдавная - http://localhost:3000,
+## Доступные страницы
+- Главная - http://localhost:3000,
 - Авторизация - http://localhost:3000/authorization
 - Регистрация - http://localhost:3000/registration
 - Профиль - http://localhost:3000/profile
