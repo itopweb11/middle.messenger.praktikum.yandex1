@@ -1,8 +1,8 @@
 import Handlebars from 'handlebars'
-import { Input } from '../../components/input/input.ts'
-import { Title } from '../../components/title/title.ts'
-import { Button } from '../../components/button/button.ts'
-import { Link } from '../../components/link/link.ts'
+import {Input} from '../../components/input/input.ts'
+import {Title} from '../../components/title/title.ts'
+import {Button} from '../../components/button/button.ts'
+import {Link} from '../../components/link/link.ts'
 
 import ProfileForm from './profile.hbs?raw'
 

@@ -1,5 +1,5 @@
 import Handlebars from 'handlebars';
-import { Link } from '../../components/link/link.ts';
+import {Link} from '../../components/link/link.ts';
 import {Error} from '../../components/error/error.ts'
 
 Handlebars.registerPartial('Link', Link);
