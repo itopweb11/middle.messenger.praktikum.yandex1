@@ -8,35 +8,29 @@ import ProfileForm from './profile.hbs?raw'
 
 interface Profile {
     login: string,
-    password: string,
     email: string,
     first_name: string,
-    surname: string,
-    chat_name: string,
+    second_name: string,
+    display_name: string,
     phone: string,
-    avatar: string,
 }
 
 export const profile: Profile = {
-    login: '',
-    password: '',
-    first_name: '',
-    surname: '',
-    chat_name: '',
-    email: '',
-    phone: '',
-    avatar: '',
+    login: 'ivanivanov',
+    first_name: 'Иван',
+    second_name: 'Иванов',
+    display_name: 'Иван',
+    email: 'pochta@yandex.ru',
+    phone: '+7 (909) 967 30 30',
 }
 
 export enum InputUserFileId {
     login = '#login_input',
-    password = '#password_input',
     first_name = '#first_name_input',
-    surname = '#surname_input_input',
-    chat_name = '#chat_name_input',
+    second_name = '#second_name_input',
+    display_name = '#display_name_input',
     email = '#email_input',
     phone = '#phone_input',
-    avatar = '#avatar_input',
 }
 
 
@@ -57,21 +51,18 @@ const profileForm = (profile: Profile) => template(profile)
 
 document.querySelector<HTMLDivElement>('#app')!.innerHTML = profileForm({...profile})
 
-const inputAvatar = document.querySelector<HTMLDivElement>(InputUserFileId.avatar)
 const inputLogin = document.querySelector<HTMLDivElement>(InputUserFileId.login)
-const inputPassword = document.querySelector<HTMLDivElement>(InputUserFileId.password)
 const inputEmail = document.querySelector<HTMLDivElement>(InputUserFileId.email)
 const inputFirstName = document.querySelector<HTMLDivElement>(InputUserFileId.first_name)
-const inputSecondName = document.querySelector<HTMLDivElement>(InputUserFileId.surname)
-const inputDisplayName = document.querySelector<HTMLDivElement>(InputUserFileId.chat_name)
+const inputSecondName = document.querySelector<HTMLDivElement>(InputUserFileId.second_name)
+const inputDisplayName = document.querySelector<HTMLDivElement>(InputUserFileId.display_name)
 const inputPhone = document.querySelector<HTMLDivElement>(InputUserFileId.phone)
 
-inputAvatar?.addEventListener('input', (e) => profileFiled(e, 'avatar'))
 inputLogin?.addEventListener('input', (e) => profileFiled(e, 'login'))
-inputPassword?.addEventListener('input', (e) => profileFiled(e, 'password'))
 inputEmail?.addEventListener('input', (e) => profileFiled(e, 'email'))
 inputFirstName?.addEventListener('input', (e) => profileFiled(e, 'first_name'))
-inputSecondName?.addEventListener('input', (e) => profileFiled(e, 'surname'))
-inputDisplayName?.addEventListener('input', (e) => profileFiled(e, 'chat_name'))
+inputSecondName?.addEventListener('input', (e) => profileFiled(e, 'second_name'))
+inputDisplayName?.addEventListener('input', (e) => profileFiled(e, 'display_name'))
 inputPhone?.addEventListener('input', (e) => profileFiled(e, 'phone'))
+
 export default profileForm

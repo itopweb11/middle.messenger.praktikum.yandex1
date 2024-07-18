@@ -8,7 +8,7 @@ const template = Handlebars.compile(Chat);
 
 const chat = () => {
     const context = {
-        text: 'Страница не сушествует'
+        text: 'Страница не найдена...'
     };
     return template(context);
 };
