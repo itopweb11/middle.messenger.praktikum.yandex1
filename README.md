@@ -1,3 +1,17 @@
+# middle.messenger.praktikum.yandex
+
+### Чтобы запустить проект
+
+```npm i```
+
+```npm run start```
+
+### Проект будет доступен по ссылке http://localhost:3000/
+
+### Для сборки проекта
+
+```npm run build```
+
 ### Чат
 
 - Демо на Netlify: https://yandex-practicum-itopweb11-sprint1.netlify.app
@@ -5,5 +19,10 @@
 
 
 ### Доступные страницы
-- Авторизация - http://localhost:3000,
+- Гдавная - http://localhost:3000,
+- Авторизация - http://localhost:3000/authorization
 - Регистрация - http://localhost:3000/registration
+- Профиль - http://localhost:3000/profile
+- Чат - http://localhost:3000/chat
+- 404 - http://localhost:3000/404
+- 500 - http://localhost:3000/500
